@@ -116,7 +116,7 @@ const interestBlockElem = (
     </Block>
 );
 
-const profileBlock = {
+const profile = {
     faIcon: 'coffee',
     name: 'Daniel Kim',
     job: 'Freelance Consultant'
@@ -145,8 +145,8 @@ const followBlock = {
 
 };
 
-const profileBlockElem = (
-    <Profile faIcon={profileBlock.faIcon} name={profileBlock.name} job={profileBlock.job} />
+const profileElem = (
+    <Profile faIcon={profile.faIcon} name={profile.name} job={profile.job} />
 );
 
 const aboutBlockElem = {
@@ -165,7 +165,7 @@ ReactDOM.render(
     <React.StrictMode>
         <div className="resume">
             <div className="base">
-                {profileBlockElem}
+                {profileElem}
                 {/*{aboutBlockElem}
                 {contactBlockElem}
                 {followBlockElem} */}
