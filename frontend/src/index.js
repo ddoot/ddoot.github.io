@@ -18,9 +18,10 @@ const expBlocks = [
         faIcon: 'briefcase',
         name: 'Experience',
         experience: [
+            { title: 'Software Engineering Intern', institution: 'Applied Research Laboratories', duration: 'Jul 2021 - September 2021' },
             { title: 'Freelance Consultant', institution: 'Upwork', duration: 'Apr 2021 - Now' },
             { title: 'Software Intern', institution: 'Bilingual Annotations Task Force', duration: 'Aug 2018 - Jan 2019' },
-            { title: 'Research Intern', institution: 'University of Texas at Dallas', duration: 'March 2016 - Apr 2019' }
+            { title: 'Research Intern', institution: 'University of Texas at Dallas', duration: 'Mar 2016 - Apr 2019' }
         ]
     },
     {
@@ -28,7 +29,8 @@ const expBlocks = [
         faIcon: 'graduation-cap',
         name: 'Education',
         experience: [
-            { title: 'Bachelor of Science in Computer Science, Mathematics', institution: 'University of Texas at Austin', duration: 'Aug 2018 - Now' },
+	    { title: 'Bachelor of Science in Computer Science', institution: 'University of Texas at Austin', duration: 'Aug 2018 - Now' },
+            { title: 'Bachelor of Science in Mathematics', institution: 'University of Texas at Austin', duration: 'Aug 2018 - Aug 2021' },
             { title: 'Advanced Diploma', institution: 'The Texas Academy of Mathematics and Science', duration: 'August 2016 - May 2018' }
         ]
     }
@@ -37,12 +39,10 @@ const expBlocks = [
 const skillBarBlock = {
     className: 'skills-prog',
     skillBars: [
-        { percent: 95, name: 'React' },
-        { percent: 15, name: 'Erlang' },
-        { percent: 80, name: 'Python' },
-        { percent: 95, name: 'React' },
-        { percent: 15, name: 'Erlang' },
-        { percent: 80, name: 'Python' }
+	{ percent: 60, name: 'C/C++' },
+        { percent: 80, name: 'Java/Kotlin' },
+        { percent: 50, name: 'React/React-Redux' },
+        { percent: 80, name: 'TensorFlow' }
     ],
     faIcon: 'code',
     name: 'Programming Skills'
@@ -51,10 +51,9 @@ const skillBarBlock = {
 const skillPieBlock = {
     className: 'skills-soft',
     skillPies: [
-        { percent: 50, name: 'React' },
-        { percent: 60, name: 'Erlang' },
-        { percent: 70, name: 'Python' },
-        { percent: 95, name: 'React' }
+        { percent: 50, name: 'Qt' },
+        { percent: 70, name: 'Vim' },
+        { percent: 75, name: 'BASH/*nix' }
     ],
     faIcon: 'keyboard-o',
     name: 'Software Skills'
@@ -119,15 +118,16 @@ const interestBlockElem = (
 const profile = {
     faIcon: 'coffee',
     name: 'Daniel Kim',
-    job: 'Freelance Consultant'
+    job: 'Backend Software Engineer'
 };
 
 const aboutBlock = {
     className: 'about',
 
-    text: 'I\'m a freelance consultant on Upwork, specializing in backend development,\
-            formal verification, and research mathematics. Experienced with Python, Java, C/C++, Rust, \
-            theorem provers (e.g., Arend), and technical writing.',
+    text:  
+	'I\'m a rising backend software engineer, specializing in event-driven and parallel programming.' +
+	'Current research interests include Homotopy Type Theory and Discrete Differential Geometry.' +
+	'Experienced with Python, Java, C/C++, Rust, and technical writing.'
 }
 
 const contactBlock = {
